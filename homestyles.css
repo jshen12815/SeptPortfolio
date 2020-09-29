@@ -1,7 +1,7 @@
 /*_________COLOR SCHEME_____________*/
 :root{
-	/*--H_bkg: #000000;
-	--H_typeline:#FFFFFF;  */
+	--H_bkg: #0B1252;
+	--H_typeline:#FFFFFF;  
 
 	--H_bkg: #F8F4F1; 
 	--H_typeline:#343890;
@@ -144,6 +144,8 @@ p.b2 {
 
 p.pn1{
 	font-size: 40px;
+	margin-top:15px;
+	margin-bottom: 20px;
 }
 
 p.CTAtext {
@@ -164,7 +166,7 @@ p.B1{
 }
 .projNum {
 	font-weight: 700;
-	font-size: 20;
+	font-size: 24px;
 	/*-webkit-text-stroke: 2px var(--H_typeline);
 	color: #FFFFFF;*/
 }
@@ -237,7 +239,7 @@ p.B1{
    /* background-color: var(--H_bkg);*/
     z-index: 10000;
     width: 100vw;
-    height:30px;
+    height:28px;
 	position: fixed;
 	bottom: 0;
 	display: flex;
@@ -249,31 +251,32 @@ p.B1{
 	font-family:'Roboto Mono', monospace;
 	width: calc(100vw / 9);
 	text-align: center;
-	padding: 0;
+	margin-top: 8px;
 	z-index: 999;
+	height: 3px;
 }
 
 
 #moveBar {
 	/*width: calc(100vw / 9);*/
-	height: 20px;
+	height: 18px;
 	border-radius: 15px;
 	border: 1px solid var(--H_typeline);
 	position: fixed;
 	z-index: 500;
-	bottom: 3px;
+	bottom: 4px;
 	/*background-color: var(--H_typeline);*/
 }
 
 #moveBar2 {
 	/*width: calc(100vw / 9);*/
-	height: 20px;
+	height: 18px;
 	border-radius: 15px;
 	border: 1px solid var(--H_typeline);
 	position: fixed;
 	z-index: 501;
-	bottom: 3px;
-	/*background-color: var(--H_typeline);*/
+	bottom: 4px;
+	/*background-colo.r: var(--H_typeline);*/
 }
 
 
@@ -385,7 +388,7 @@ nav {
 .descrip {
 	display: flex;
 	flex-direction:row;
-	justify-content: space-around
+	justify-content: start;
 	width:500px;
 
 }
@@ -455,7 +458,7 @@ nav {
 
 
 /* _________________________MOBILE_________________________ */
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 480px){
 .mHide {
 	display: none !important;
 }
@@ -526,7 +529,7 @@ nav {
 }
 
 /* _________________________DESKTOP_________________________ */
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 480px){
 
 .dHide{
 	display:none;
@@ -588,7 +591,6 @@ nav {
     margin-top: 5vh;
     vertical-align: middle;
     max-height: calc(100vh - 50px);
-    border: 1px solid white;
 }
 
 
@@ -624,7 +626,6 @@ nav {
 	overflow:hidden;
 	height: calc(100vh - 450px);
 	max-height: 600px;
-	border: 1px solid red;
 }
 
 
@@ -680,7 +681,7 @@ p.credit{
 
 
 .c0 {
-	flex:0 0 620px;
+	flex:0 0 650px;
 }
 
 .c1 {
@@ -693,7 +694,7 @@ p.credit{
 }
 
 .c3 {
-	flex:0 0 670px;
+	flex:0 0 570px;
 
 }
 .c4 {
@@ -701,7 +702,7 @@ p.credit{
 }
 
 .c5 {
-	flex:0 0 700px;
+	flex:0 0 600px;
 }
 
 .c6 {
@@ -709,11 +710,11 @@ p.credit{
 }
 
 .c7 {
-	flex:0 0 550px;
+	flex:0 0 650px;
 }
 
 .c8 {
-	flex:0 0 560px;
+	flex:0 0 660px;
 }
 
 
@@ -729,7 +730,6 @@ p.credit{
 .img01{
 	overflow: hidden;
 	width: 500px;
-	border: 1px solid red;
 }
 
 .img02{
@@ -887,9 +887,8 @@ p.bDesc {
 
 p.H1{
 	font-size: 50px;
-	font-weight: 500;
 	margin: 0;
-	margin-top: 30px;
+	margin-top: 20px;
 }
 
 p.H2{
@@ -1004,7 +1003,6 @@ p.H2{
 		.pflip1 {
 			display:none;}
 
-
 		.pskills3 {
 			position: absolute;
 			top:20px;
@@ -1029,9 +1027,7 @@ p.H2{
 		}
 
 		.content {
-			padding-top:0px;
 		}
-
 
 		.stack2 {
 			display: none;
@@ -1040,3 +1036,8 @@ p.H2{
 
 }
 
+@media only screen and (max-height: 1000px){
+	p.pn1{
+		font-size: 38px;
+	}
+}
