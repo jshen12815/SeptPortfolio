@@ -1,9 +1,9 @@
 /*_________COLOR SCHEME_____________*/
 :root{
-	/*--H_bkg: #ffffff;
-	--H_typeline:#343890;  F90000*/
+	/*--H_bkg: #000000;
+	--H_typeline:#FFFFFF;  */
 
-	--H_bkg: #F8F4F1; /*#FBF8ED;*/
+	--H_bkg: #F8F4F1; 
 	--H_typeline:#343890;
 
 }
@@ -72,6 +72,7 @@ body{
 }
 
 #emailCopy{
+	font-size:24px;
 	margin:0;
 }
 
@@ -123,13 +124,14 @@ p {
 }
 
 p.HiThere {
-	font-size: 80px;
+	font-size: 70px;
 	margin-bottom: 0px;
 	margin-top: 10vh;
 }
 
 p.aboutMe {
-	font-size: 24px;
+	font-size: 18px;
+	width: 350px;
 }
 
 p.b2 {
@@ -141,7 +143,7 @@ p.b2 {
 }
 
 p.pn1{
-	font-size: 24px;
+	font-size: 40px;
 }
 
 p.CTAtext {
@@ -191,12 +193,13 @@ p.B1{
 }
 
 .CTA {
-	font-size: 24px; 
+	font-size: 18px; 
 	border-radius: 50%;
-	width: 200px;
-	height:200px;
-	float: right;
-	bottom: 400px;
+	padding:50px 20px;
+	position: absolute;
+	right:50px;
+	bottom: 40vh;
+
 	border: 1px solid var(--H_typeline);
 	color:var(--H_typeline);
 	text-decoration: none;
@@ -363,8 +366,8 @@ nav {
 	position: relative;
 	cursor:pointer;
 	display: block;
-	height:100%;
 	width: 100%;
+	height: 100%;
 	overflow-wrap: normal;
 	padding-left: 30px;
 	padding-top: 30px;
@@ -520,9 +523,6 @@ nav {
 	min-height: 50vh;
 }
 
-.projImage01{
-	height: 500px;
-}
 }
 
 /* _________________________DESKTOP_________________________ */
@@ -587,7 +587,8 @@ nav {
 	position: absolute;
     margin-top: 5vh;
     vertical-align: middle;
-
+    max-height: calc(100vh - 50px);
+    border: 1px solid white;
 }
 
 
@@ -621,6 +622,9 @@ nav {
     position: relative;
 	text-align: center;
 	overflow:hidden;
+	height: calc(100vh - 450px);
+	max-height: 600px;
+	border: 1px solid red;
 }
 
 
@@ -651,9 +655,7 @@ nav {
 }
 
 
-.c0 {
-	flex:0 0 620px;
-}
+
 
 
 p.credit{
@@ -675,26 +677,45 @@ p.credit{
 	width: 35px;
 }
 
+
+
+.c0 {
+	flex:0 0 620px;
 }
 
 .c1 {
 	flex:0 0 550px;
 }
 
-.img01{
-	overflow: hidden;
-	width: 500px;
-	height: 50vh;
-}
 
 .c2 {
 	flex:0 0 550px;
 }
 
-.img02{
-	width:500px;
-	height:48vh;
+.c3 {
+	flex:0 0 670px;
+
 }
+.c4 {
+	flex:0 0 550px;
+}
+
+.c5 {
+	flex:0 0 700px;
+}
+
+.c6 {
+	flex:0 0 600px;
+}
+
+.c7 {
+	flex:0 0 550px;
+}
+
+.c8 {
+	flex:0 0 560px;
+}
+
 
 
 .animated #static, .static #animated {
@@ -705,17 +726,48 @@ p.credit{
 }
 
 
+.img01{
+	overflow: hidden;
+	width: 500px;
+	border: 1px solid red;
+}
 
-
-.c3 {
-	flex:0 0 670px;
-
+.img02{
+	overflow: hidden;
+	width:500px;
+	
 }
 .img03{
 	overflow: hidden;
 	width: 600px;
 	height: 280px;
 }
+.img04{
+	overflow: hidden;
+
+	width:490px;
+
+}
+.img05{
+	overflow: hidden;
+	width: 500px;
+}
+.img06{
+	overflow: hidden;
+	width: 600px;
+	height:350px;
+}
+.img07{
+	overflow: hidden;
+	width: 500px;
+}
+
+.img08{
+	overflow: hidden;
+	width: 500px;
+}
+
+
 
 .stack3 {
 	width: 100%;
@@ -741,43 +793,6 @@ p.credit{
 	border-top: 5px solid var(--H_typeline);
 	cursor:pointer;
 }
-
-
-.c4 {
-	flex:0 0 550px;
-}
-
-
-.img04{
-	overflow: hidden;
-
-	width:490px;
-	height:60vh;
-
-}
-
-
-
-.c5 {
-	flex:0 0 600px;
-}
-.img05{
-	overflow: hidden;
-	width: 500px;
-	height: 50vh;
-}
-
-
-.c6 {
-	flex:0 0 700px;
-}
-
-.img06{
-	overflow: hidden;
-	width: 600px;
-	height:350px;
-}
-
 
 .stack5 {
 	width: 100%;
@@ -805,29 +820,8 @@ p.credit{
 	cursor:pointer;
 }
 
-.c7 {
-	flex:0 0 550px;
-}
-
-.img07{
-	overflow: hidden;
-	width: 500px;
-	height: 50vh;
-}
 
 
-
-
-.c8 {
-	flex:0 0 560px;
-}
-
-
-.img08{
-	overflow: hidden;
-	width: 500px;
-	height: 65vh;
-}
 
 
 }
@@ -835,14 +829,7 @@ p.credit{
 
 
 
-@media only screen and (max-height: 400px){
-.imgContainer{
-	display: none;
-}
-.stack2 {
-	display: none;
-}
-}
+
 
 
 
@@ -999,4 +986,57 @@ p.H2{
 }
 
 
+@media only screen and (max-height: 400px){
+
+		.pskills0{
+			display:none;
+		}
+		.pskills {
+			display:none;}
+		.pskills2 {
+			display:none;
+		}
+		.pflip0 {
+			display:none;}
+		.pflip2 {
+			display:none;
+		}		
+		.pflip1 {
+			display:none;}
+
+
+		.pskills3 {
+			position: absolute;
+			top:20px;
+		}
+		.pflip3 {
+			display:none;
+			position: absolute;
+			top:20px;
+		}
+		.pskills3{
+			display:none;
+		}
+
+}
+
+@media only screen and (max-height: 600px){
+		.imgContainer{
+			display: none;
+		}
+		.stack4{
+			display:none;
+		}
+
+		.content {
+			padding-top:0px;
+		}
+
+
+		.stack2 {
+			display: none;
+		}
+
+
+}
 
