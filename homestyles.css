@@ -1,10 +1,11 @@
 /*_________COLOR SCHEME_____________*/
 :root{
 	--H_bkg: #000000;
-	--H_typeline:#FFFFFF;  
+	--H_typeline:#FFFFFF; 
+	--H_lineDark:#787878; 
 
-	--H_bkg: #F8F4F1; 
-	--H_typeline:#343890;
+	/*--H_bkg: #F8F4F1; 
+	--H_typeline:#343890;*/
 
 }
 
@@ -234,7 +235,7 @@ p.B1{
 
 .locator{
 	text-decoration: none;
-	border-top: 1px solid var(--H_typeline);
+	border-top: 1px solid var(--H_lineDark);
     font-size: 10px;
    /* background-color: var(--H_bkg);*/
     z-index: 10000;
@@ -612,7 +613,7 @@ p.pn1{
 	display:flex;
 	position:relative;
 	overflow: hidden;
-	border-left: 1px solid var(--H_typeline);
+	border-left: 0.5px solid var(--H_lineDark);
 }
 
 
@@ -651,7 +652,7 @@ p.pn1{
 	width: 100%;
 	height: 200px;
 	text-decoration: none;
-	border-top: 1px solid var(--H_typeline);
+	border-top: 1px solid var(--H_lineDark);
 	position: absolute;
 	bottom:0;
 	padding: 0px 30px 30px 30px;
@@ -830,7 +831,7 @@ p.credit{
 	color: white;
 	width: 100%;
 	height: 20%;
-	border-top: 1px solid var(--H_typeline);
+	border-top: 1px solid var(--H_lineDark);
 	position: absolute;
 	bottom:0;
 	z-index: 998;
@@ -855,7 +856,7 @@ p.credit{
 	width: 100%;
 	height: 120px;
 	padding:10px;
-	border-top: 1px solid var(--H_typeline);
+	border-top: 1px solid var(--H_lineDark);
 	position: absolute;
 	bottom:10px;
 	z-index: 997;
