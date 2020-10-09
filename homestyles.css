@@ -1,7 +1,7 @@
 /*_________COLOR SCHEME_____________*/
 :root{
 	--H_bkg: #000000;
-	--H_typeline:#FFFFFF; 
+	--H_typeline:#F9F1EB; 
 	--H_lineDark:#787878; 
 
 	/*--H_bkg: #F8F4F1; 
@@ -45,7 +45,10 @@ body{
 		  font-family: 'Ambiant';
 		 /* font-family: 'Cormorant Garamond', serif;*/
 		  /*font-family:'Lora', serif; */
-		  background-color: var(--H_bkg);
+		  /*background-color: var(--H_bkg);*/
+
+		  background-image: linear-gradient(black,#12123A);
+		  background-attachment: fixed;
 		  margin: 0;
 		  padding: 0;
 		}
@@ -308,7 +311,7 @@ header {
 
 .topnav {
 	text-decoration: none;
-	border-bottom: 1px solid var(--H_typeline);
+	border-bottom: 1px solid var(--H_lineDark);
     font-size: 16px;
     padding: 10px;
 
@@ -596,7 +599,7 @@ p.pn1{
 }
 
 .topnav-right a {
-  border-left: 1px solid var(--H_typeline);
+  border-left: 1px solid var(--H_lineDark);
   padding: 10px;
   float: center;
   }
