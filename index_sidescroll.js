@@ -1,4 +1,3 @@
-
 //Js for side scroll on Homepage
 // get array of pane objects and select last on
 //var page = document.getElementById('page');
@@ -25,12 +24,12 @@ var lastEnd = endLast.getBoundingClientRect().right; //position at the end of 2n
 window.onscroll = function () {
 
         if(window.matchMedia ("(min-width: 480px)").matches){
-        	  // Horizontal Scroll
-        	  var y = document.body.getBoundingClientRect().top;
-        	  page.scrollLeft = -y;
+            // Horizontal Scroll
+            var y = document.body.getBoundingClientRect().top;
+            page.scrollLeft = -y;
            // expRow.scrollLeft= -y;
             //document.getElementById('variables').innerHTML = window.scrollY;
-        	  var barP = scrollY / begStar;
+            var barP = scrollY / begStar;
             var barPosition = barP * window.innerWidth;
 
             var barP2 = (scrollY - begStar) / begStar;
@@ -41,7 +40,7 @@ window.onscroll = function () {
             document.getElementById("moveBar").style.marginLeft = barPosition + "px";
             document.getElementById("moveBar2").style.marginLeft = bar2Position + "px";
 
-        	  // Looping Scroll
+            // Looping Scroll
               // Find new locations based on window width
               var begEnd = lastEnd - window.innerWidth;
               var returnMid = begStar - window.innerWidth;
@@ -58,8 +57,8 @@ window.onscroll = function () {
               // For testing: 
             // document.getElementById('variables').innerHTML = window.scrollY;  
 
-        	}
-        	
+          }
+          
 // Adjust the body height if the window resizes.
 window.onresize = resize;
 // Initial resize.
@@ -68,13 +67,13 @@ resize();
 
 // Reset window-based vars
 function resize() {
-        	  var w = page.scrollWidth-window.innerWidth+window.innerHeight;
-        	  document.body.style.height = w + 'px';
+            var w = page.scrollWidth-window.innerWidth+window.innerHeight;
+            document.body.style.height = w + 'px';
             var inwidth = window.innerWidth * window.innerWidth
             var barwidth = inwidth / begStar;
             document.getElementById("moveBar").style.width = barwidth + "px";
             document.getElementById("moveBar2").style.width = barwidth + "px";
-        	}
+          }
 
 function mobileNav() {
   var x = document.getElementById("responsivenav");
@@ -167,6 +166,59 @@ function outFunc() {
 }
 
 
+
+/* FADE IN FADE IN FADE IN FADE IN */
+function fadeInPage() {
+
+      if (!window.AnimationEvent) { return; }
+          var fader = document.getElementById('fader');
+    fader.classList.add('fade-out');
+}
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+
+   if (!window.AnimationEvent) { return; }
+   var anchors = document.getElementsByTagName('a');
+    
+    for (var idx=0; idx<anchors.length; idx+=1) {
+      if (anchors[idx].hostname !== window.location.hostname ||
+            anchors[idx].pathname === window.location.pathname) {
+            continue;
+        }
+
+     anchors[idx].addEventListener('click', function(event) {
+            var fader = document.getElementById('fader'),
+                anchor = event.currentTarget;
+            
+            var listener = function() {
+                window.location = anchor.href;
+                fader.removeEventListener('animationend', listener);
+            };
+            fader.addEventListener('animationend', listener);
+            
+            event.preventDefault();
+            fader.classList.add('fade-in');
+        });
+    }
+});
+
+
+window.addEventListener('pageshow', function (event) {
+  if (!event.persisted) {
+    return;
+  }
+  var fader = document.getElementById('fader');
+  fader.classList.remove('fade-in');
+});
+
+
+
+
 /*
 $(function(){
     $('.img_wrap').on( 'mouseout', function() {
@@ -201,7 +253,6 @@ $(function(){
                 window.scrollTo(0, diff);
                
               }
-
               //scrollto (0, left of position of lastpane + window.scrollY)
               else if (window.scrollY == 0) {
                 window.scrollTo(0, dummy_x);
@@ -209,7 +260,6 @@ $(function(){
               }
               //reverse scroll
               //else if()
-
 */
 //offsetWidth(incl border) or clientWidth(no border)
 

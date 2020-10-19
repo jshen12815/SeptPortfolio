@@ -57,7 +57,6 @@ body{
 
 
 /*
-
 @font-face {
     font-family: GraublauWeb;
     font-weight: bold;
@@ -311,7 +310,7 @@ p.B1{
 	position: fixed;
 	z-index: 500;
 	bottom: 4px;
-	/*background-color: var(--H_typeline);*/
+	background-color: var(--H_typeline);
 }
 
 #moveBar2 {
@@ -385,12 +384,10 @@ nav {
 
 
 /*.scrollB {
-
 	transition: all 05s;
 	&.scrollUp
 	transform: translateY(-80px);
 }
-
 */
 
 
@@ -409,8 +406,6 @@ nav {
 
 .content {
 	/*background-color: #F4ECEC;;*/
-	color: var(--H_typeline);
-	text-decoration: none;
 	position: relative;
 	cursor:pointer;
 	display: block;
@@ -1172,7 +1167,6 @@ p.H2{
 
 }
 /*
-
 @media only screen and (max-height: 700px){
 			.c0{
 			flex:0 0 950px;
@@ -1181,10 +1175,8 @@ p.H2{
 			display: inline-block;
 			padding-left: 20px;
 		}
-
 	p.HiThere{
 			display: inline-block;}
-
 }*/
 
 @media only screen and (max-height: 1000px){
