@@ -415,7 +415,6 @@ nav {
 	padding-top: 30px;
 	margin-bottom: -52px;
     border-top: 5px solid var(--H_bkg);
-    border-bottom: 1px solid red;
     overflow: hidden;
     color: var(--H_typeline);
     text-decoration: none;
@@ -686,18 +685,42 @@ p.creditAbout{
 
 }
 
+.pane {
+	height: 550px;
+}
+
+
+
 .stack1{
 	padding-left: 10px;
 }
 
+.c0{
+	height: 420px;
+}
+
+.c5 {
+	height:600px;
+}
+
+.c8{
+	height: 800px;
+}
+
 p.HiThere{
-	font-size: 50px;
+	font-size: 40px;
 }
 
 p.pn1{
 	margin-bottom: 5px;
 }
 
+.CTA {
+	display: block;
+	position: relative;
+	margin-top: 10px;
+	float: left;
+}
 
 
 }
@@ -1046,7 +1069,7 @@ p.credit{
 }
 
 .construction {
-	font-size: 30px;
+	font-size: 24px;
 	color: var(--H_typeline);
 	margin: auto;
 	margin-top: 10px;
@@ -1090,6 +1113,7 @@ width: 50%;
 
 }
 .spacer{
+	height: 200px;
 }
 
 .pHeadDesc{
