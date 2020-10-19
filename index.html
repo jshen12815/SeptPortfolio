@@ -7,6 +7,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
+  <script type="text/javascript" src="animation.js"></script>
 </head>
 
 
@@ -20,7 +21,10 @@
 
 
 
-
+<svg id="fader"></svg>
+ <script>
+            fadeInPage();
+        </script>
 
 <div class = "topnav">	
 	   <div>
@@ -103,7 +107,7 @@
   </div>
 	<!--__________Project 1: MAILCHIMP__________-->
   <div class="pane c1 img_wrap" > 
-  						<div onclick = "location.href = 'project01.html';" class = "content"> 
+  						<a href = "project01.html" class = "content"> 
 							<div class = "projNum">Ø1 </div>
 							<div class = "everything">
 								   <div class = "imgContainer img01"> <img class = "homeCover" src="assets/01_MCP/01m_cover.jpg" class= "projImage01"></div>
@@ -120,12 +124,12 @@
 									    </p></div>
 									</div>
 							</div>
-						</div>
+						</a>
 
    	</div>
 	<!--__________   Project 2: JUICE____________________-->
   <div class="pane c2 img_wrap">	
-  					<div onclick = "location.href = 'project01.html';" class = "content">
+  					<a href = "project01.html"  class = "content">
 						<div class = "projNum">Ø2</div>
 						<div class = "everything">
 
@@ -147,7 +151,7 @@
 									</div>
 
 						</div>
-				</div>
+				</a>
   </div>
 
 
@@ -156,7 +160,7 @@
 		<div class = "stacked">
 
 									   	<!--a class="paneLink" href = "project01.html"-->
-						  				<div onclick = "location.href = 'project01.html';" class = "stack3 content">
+						  				<a href = "project01.html"  class = "stack3 content">
 											<div class = "projNum"> Ø3 </div>
 											<div class = "everything">
 												   <div class = "imgContainer img03"> 
@@ -173,7 +177,7 @@
 													   <div class = "pskills3"> <p class ="b2">Verizon </p></div>
 													</div>
 											</div>
-										</div>
+										</a>
 
 										<div onclick = "location.href = 'project01.html';" class = "stack4 mHide">
 													<!--a class="paneLink" href = "project01.html" -->
@@ -192,7 +196,7 @@
 
 	<!--__________   Project 4: SAMSUNG____________________-->
   <div class="pane c4 img_wrap">  
-    						<div onclick = "location.href = 'SamsungNote8.html';" class = "content">
+    						<a href = "SamsungNote8.html" class = "content">
 
 							   	   <div class = "projNum">Ø4</div>
 
@@ -213,7 +217,7 @@
 									   <div class = "pskills3"> <p class ="b2">Samsung </p></div>
 									</div>
 								</div>
-						</div>
+						</a>
 
 
 
@@ -221,7 +225,7 @@
 
 	<!--__________   Project 5: Hawke____________________-->
     <div class="pane c5 img_wrap">  	 						
-						  				<div onclick = "location.href = 'project01.html';" class = "content">
+						  				<a href = "project01.html"   class = "content">
 											   	   <div class = "projNum">Ø5 </div>
 											   	   <div class = "everything">
 											   	    <div class = "imgContainer img05"> 
@@ -240,14 +244,14 @@
 													</div>
 												</div>
 
-										</div>
+										</a>
 
   </div>
 
 	<!--__________   Project 6: G-Tech____________________-->
   <div class="pane c6 img_wrap"> 
-						  	<div class ="stacked">
-				  						<div onclick = "location.href = 'project01.html';" class = "stack5 content">
+		<div class ="stacked">
+				  		<a href = "project01.html" class = "stack5 content">
 											   	   <div class = "projNum">Ø6 </div>
 
 
@@ -265,7 +269,7 @@
 													   <div class = "pskills3"> <p class ="b2">Western Digital </p></div>
 													</div>
 												</div>
-										</div>
+										</a>
 										<div onclick = "location.href = 'motion.html';" class = "stack6 mHide">
 										   				<div class = "imgContainer img06"> <img src="assets/06_GTEAM/motion2.png" class= "projImage" style="width:70%;"></div>
 							</div>
@@ -274,7 +278,7 @@
   </div>
 
 	<!--______________   Project 7: Taggle____________________-->
-    <div class="pane c7 img_wrap">  	 						
+    <!--div class="pane c7 img_wrap">  	 						
   						<div onclick = "location.href = 'project01.html';" class = "content">
 							   	   <div class = "projNum">Ø7 </div>
 							   	   <div class = "everything">
@@ -293,13 +297,13 @@
 									</div>
 								</div>
 						</div>
-  </div>
+  </div-->
 
   <!-- endStart necessary for JS-->
 
   <!--_______________   Project 8: SXSW____________________-->
   <div class="pane c8 img_wrap" id ="endStart">  	 						
-  						<div onclick = "location.href = 'project01.html';" class = "content">
+  						<a href = "project01.html" class = "content">
 							   	   <div class = "projNum">Ø8 </div>
 							   	   <div class = "everything">
 								   <div class = "imgContainer img08"> <img class ="homeCover" src="assets/08_SXSW/08s_cover.jpg" class= "projImage" style="width:100%;"></div>
@@ -320,7 +324,7 @@
 									   </p></div>
 									</div>
 								</div>
-						</div>
+						</a>
   </div>
 
 
@@ -372,7 +376,7 @@
   </div>
 	<!--__________Project 1: MAILCHIMP__________-->
   <div class="pane c1 mHide img_wrap" > 
-  						<div onclick = "location.href = 'project01.html';" class = "content"> 
+  						<a href = "project01.html" class = "content"> 
 							<div class = "projNum">Ø1 </div>
 							<div class = "everything">
 								   <div class = "imgContainer img01"> <img class ="homeCover" class = "homeCover" src="assets/01_MCP/01m_cover.jpg" class= "projImage01"></div>
@@ -389,12 +393,12 @@
 									    </p></div>
 									</div>
 							</div>
-						</div>
+						</a>
 
    	</div>
 	<!--__________   Project 2: JUICE____________________-->
   <div class="pane c2 mHide img_wrap">	
-  				<div onclick = "location.href = 'project01.html';" class = "content">
+  				<a href = "project01.html"   class = "content">
 						<div class = "projNum">Ø2</div>
 						<div class = "everything">
 
@@ -419,14 +423,14 @@
 									</div>
 
 						</div>
-				</div>
+				</a>
   </div>
 
  <div class="pane c3 mHide ">
 		<div class = "stacked">
 
 									   	<!--a class="paneLink" href = "project01.html"-->
-						  				<div onclick = "location.href = 'project01.html';" class = "stack3 content">
+						  				<a href = "project01.html"   class = "stack3 content">
 											<div class = "projNum"> Ø3 </div>
 											<div class = "everything">
 												   <div class = "imgContainer img03"> <img class ="homeCover" src="assets/03_CHASE/03c_cover.png" class= "projImage" style="width:100%;"></div>
@@ -441,7 +445,7 @@
 													   <div class = "pskills3"> <p class ="b2">Verizon </p></div>
 													</div>
 											</div>
-										</div>
+										</a>
 
 										<!--div onclick = "location.href = 'project01.html';" class = "stack4 mHide">
 													<a class="paneLink" href = "project01.html">
@@ -459,10 +463,9 @@
 
 	<!--__________   Project 4: SAMSUNG____________________-->
   <div class="pane c4 mHide img_wrap">      						
-  	<div onclick = "location.href = 'SamsungNote8.html';" class = "content">
+  	<a href  = "SamsungNote8.html" class = "content">
 
 							   	   <div class = "projNum">Ø4</div>
-
 								   <div class= "everything">
 								   <div class = "imgContainer img04" > 
 								   		<img class ="homeCover" id = "animated" src = "assets/04_SAMSUNG/04s_cover.gif">
@@ -484,11 +487,11 @@
 
 
 
-  </div>
+  </a>
 
 	<!--__________   Project 5: Hawke____________________-->
     <div class="pane c5 mHide img_wrap">  	 						
-  					<div onclick = "location.href = 'project01.html';" class = "stack5 content">
+  					<a href = "project01.html"   class = "stack5 content">
 											   	   <div class = "projNum">Ø5 </div>
 											   	   <div class = "everything">
 											   	    <div class = "imgContainer img05"> <img class ="homeCover" src="assets/05_HAWKE/05h_cover.png" class= "projImage" style="width:100%;"></div>
@@ -505,20 +508,20 @@
 													</div>
 												</div>
 
-				</div>
+				</a>
   </div>
 
 	<!--__________   Project 6: G-Tech____________________-->
   <div class="pane c6 mHide"> 
-							  	<div class ="stacked">
-				  						<div onclick = "location.href = 'project01.html';" class = "stack5 content">
+		<div class ="stacked">
+				  		<a href = "project01.html" class = "stack5 content">
 											   	   <div class = "projNum">Ø6 </div>
 
 
 											   	   <div class = "everything">
 												   <div class = "imgContainer img06"> 
-
-												   	<img class ="homeCover"  src="assets/06_GTEAM/test.png" class= "projImage" ></div>
+								   		<img class ="homeCover" id = "animated" src = "assets/06_GTEAM/06g_cover2.gif">
+								   		<img class ="homeCover" id = "static" src = "assets/06_GTEAM/06g_cover.png"></div>
 												   <p class = "pn1"> Defining Brand Motion </p>
 												   <div class = "descrip">
 												   	    <svg class = "pskills0 mHide" width="69" height="60" ><use href="#lineStart" /></svg>
@@ -529,7 +532,7 @@
 													   <div class = "pskills3"> <p class ="b2">Western Digital </p></div>
 													</div>
 												</div>
-										</div>
+										</a>
 										<div onclick = "location.href = 'motion.html';" class = "stack6 mHide">
 										   				<div class = "imgContainer img06"> <img src="assets/06_GTEAM/motion2.png" class= "projImage" style="width:70%;"></div>
 							</div>
@@ -540,7 +543,7 @@
   </div>
 
 	<!--______________   Project 7: Taggle____________________-->
-    <div class="pane card c7 mHide img_wrap">  	 						
+    <!--div class="pane card c7 mHide img_wrap">  	 						
   						<div onclick = "location.href = 'project01.html';" class = "content">
 							   	   <div class = "projNum">Ø7 </div>
 							   	   <div class = "everything">
@@ -559,13 +562,13 @@
 									</div>
 								</div>
 						</div>
-  </div>
+  </div-->
 
   <!-- endLast necessary for JS-->
 
   <!--_______________   Project 8: SXSW____________________-->
   <div class="pane card c8 mHide img_wrap" id ="endLast">  	 						
-  						<div onclick = "location.href = 'project01.html';" class = "content">
+  						<a href = "project01.html"   class = "content">
 							   	   <div class = "projNum">Ø8 </div>
 							   	   <div class = "everything">
 								   <div class = "imgContainer img08"> <img class ="homeCover"  src="assets/08_SXSW/08s_cover.jpg" class= "projImage" style="width:100%;"></div>
@@ -586,7 +589,7 @@
 									   </p></div>
 									</div>
 								</div>
-						</div>
+						</a>
   </div>
 
 
