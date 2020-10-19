@@ -167,7 +167,7 @@ p {
 }
 
 p.HiThere {
-	font-size: 60px;
+	font-size: 70px;
 	margin-bottom: 0px;
 	margin-top: 10vh;
 }
@@ -240,11 +240,10 @@ p.B1{
 }
 
 .CTA {
-	float: right;
-	margin-top: -150px;
-/*	position: absolute;
+
+	position: absolute;
 	right:70px;
-	top: 230px;*/
+	top: 230px;
 	opacity: 80%;
 }
 
@@ -1117,20 +1116,23 @@ p.H2{
 }
 
 
-@media only screen and (max-height: 400px){
+@media only screen and (max-height: 300px){
 	.projNum{
 		display: none;
 	}
-
-		p.HiThere{
+	.content {
+		padding-top: calc(100vh - 250px);
+	}
+	p.HiThere{
 			display: inline-block;
-			font-size: 10vh;
-
+			font-size: 20vh;
 		}
-		p.aboutMe {
-			font-size: 5vh;
-		}
-
+	p.aboutMe {
+			font-size: 7vh;	
+			}
+.CTA {
+	font-size: 20vh;
+}
 
 }
 
@@ -1155,18 +1157,24 @@ p.H2{
 			display:none;
 		}
 
-	.credit {
-		display:none;
-	}
+		.CTA {
+		font-size: 18px; 
+		border-radius: 50%;
+		padding:30px 20px;
+		position: absolute;
+		right:50px;
+		bottom: 20vh;
 
-		.stack1{
-			margin-top: -15px;
-		}
 	}
 
 
 }
+<<<<<<< HEAD
 /*
+=======
+
+
+>>>>>>> parent of c834f1f... sumresponsive
 @media only screen and (max-height: 700px){
 			.c0{
 			flex:0 0 950px;
@@ -1177,7 +1185,12 @@ p.H2{
 		}
 	p.HiThere{
 			display: inline-block;}
+<<<<<<< HEAD
 }*/
+=======
+
+}
+>>>>>>> parent of c834f1f... sumresponsive
 
 @media only screen and (max-height: 1000px){
 	p.pn1{
