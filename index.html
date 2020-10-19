@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta charset="UTF-8">
 	<link rel="stylesheet" href="homestyles.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 
 	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
-  <meta charset="UTF-8">
+  <script type="text/javascript" src="animation.js"></script>
 </head>
 
 
@@ -17,6 +18,11 @@
 		</div-->
 <!-- Navigation___________-->
 
+
+<svg id="fader"></svg>
+        <script>
+            fadeInPage();
+        </script>
 
 
 
@@ -63,6 +69,8 @@
 
 
 <!--Side Scrolling Section___________-->
+
+
 <div id="page">
     <div class="pane c0 img_wrap"> 
 						  	
@@ -130,7 +138,7 @@
 						<div class = "everything">
 
 								   <div class = "imgContainer img02" > 
-								   		<img class ="homeCover" id = "animated" src = "assets/02_JUICE/02j_cover.jpg">
+								   		<img class ="homeCover" id = "animated" src = "assets/02_JUICE/02j_cover.gif">
 								   		<img class ="homeCover" id = "static" src = "assets/02_JUICE/02j_cover.png">
 								   </div>
 
@@ -175,11 +183,9 @@
 											</div>
 										</div>
 
-										<div onclick = "location.href = 'project01.html';" class = "stack4 mHide">
-													<!--a class="paneLink" href = "project01.html" -->
-									   				<!--div class = "content"-->
+										<!--div onclick = "location.href = 'project01.html';" class = "stack4 mHide">
 										   				<a href= "experiments.html"> <p class = "CTAtext">I'm a serial dabbler - Check out my design experiments!</p></a>
-							</div>
+							</div-->
 
 
 
@@ -266,15 +272,15 @@
 													</div>
 												</div>
 										</div>
-										<div onclick = "location.href = 'motion.html';" class = "stack6 mHide">
+										<!--div onclick = "location.href = 'motion.html';" class = "stack6 mHide">
 										   				<div class = "imgContainer img06"> <img src="assets/06_GTEAM/motion2.png" class= "projImage" style="width:70%;"></div>
-							</div>
+							</div-->
 
 		</div>
   </div>
 
 	<!--______________   Project 7: Taggle____________________-->
-    <div class="pane c7 img_wrap">  	 						
+    <!--div class="pane c7 img_wrap">  	 						
   						<div onclick = "location.href = 'project01.html';" class = "content">
 							   	   <div class = "projNum">Ø7 </div>
 							   	   <div class = "everything">
@@ -293,7 +299,7 @@
 									</div>
 								</div>
 						</div>
-  </div>
+  </div-->
 
   <!-- endStart necessary for JS-->
 
@@ -302,7 +308,10 @@
   						<div onclick = "location.href = 'project01.html';" class = "content">
 							   	   <div class = "projNum">Ø8 </div>
 							   	   <div class = "everything">
-								   <div class = "imgContainer img08"> <img class ="homeCover" src="assets/08_SXSW/08s_cover.jpg" class= "projImage" style="width:100%;"></div>
+								   <div class = "imgContainer img08"> 
+
+								   		<img class ="homeCover" id = "animated" src = "assets/08_SXSW/08s_cover.gif">
+								   		<img class ="homeCover" id = "static" src = "assets/08_SXSW/08s_cover.jpg"></div>
 								   <p class = "pn1"> Discovering Cultural </br> Design Differences </p>
 								   <div class = "descrip">
 								   	    <svg class = "pskills0 mHide" width="69" height="60" ><use href="#lineStart" /></svg>
@@ -402,7 +411,7 @@
 
 
 								   <div class = "imgContainer img02" > 
-								   		<img class ="homeCover" id = "animated" src = "assets/02_JUICE/02j_cover.png">
+								   		<img class ="homeCover" id = "animated" src = "assets/02_JUICE/02j_cover.gif">
 								   		<img class ="homeCover" id = "static" src = "assets/02_JUICE/02j_cover.png">
 								   </div>
 
@@ -510,15 +519,15 @@
 
 	<!--__________   Project 6: G-Tech____________________-->
   <div class="pane c6 mHide"> 
-							  	<div class ="stacked">
+						  	<div class ="stacked">
 				  						<div onclick = "location.href = 'project01.html';" class = "stack5 content">
 											   	   <div class = "projNum">Ø6 </div>
 
 
 											   	   <div class = "everything">
 												   <div class = "imgContainer img06"> 
-
-												   	<img class ="homeCover"  src="assets/06_GTEAM/test.png" class= "projImage" ></div>
+								   		<img class ="homeCover" id = "animated" src = "assets/06_GTEAM/06g_cover2.gif">
+								   		<img class ="homeCover" id = "static" src = "assets/06_GTEAM/06g_cover.png"></div>
 												   <p class = "pn1"> Defining Brand Motion </p>
 												   <div class = "descrip">
 												   	    <svg class = "pskills0 mHide" width="69" height="60" ><use href="#lineStart" /></svg>
@@ -530,9 +539,10 @@
 													</div>
 												</div>
 										</div>
-										<div onclick = "location.href = 'motion.html';" class = "stack6 mHide">
+										<!--div onclick = "location.href = 'motion.html';" class = "stack6 mHide">
 										   				<div class = "imgContainer img06"> <img src="assets/06_GTEAM/motion2.png" class= "projImage" style="width:70%;"></div>
-							</div>
+							</div-->
+
 
 		</div>
   						
@@ -540,7 +550,7 @@
   </div>
 
 	<!--______________   Project 7: Taggle____________________-->
-    <div class="pane card c7 mHide img_wrap">  	 						
+    <!--div class="pane card c7 mHide img_wrap">  	 						
   						<div onclick = "location.href = 'project01.html';" class = "content">
 							   	   <div class = "projNum">Ø7 </div>
 							   	   <div class = "everything">
@@ -559,7 +569,7 @@
 									</div>
 								</div>
 						</div>
-  </div>
+  </div-->
 
   <!-- endLast necessary for JS-->
 
@@ -568,7 +578,12 @@
   						<div onclick = "location.href = 'project01.html';" class = "content">
 							   	   <div class = "projNum">Ø8 </div>
 							   	   <div class = "everything">
-								   <div class = "imgContainer img08"> <img class ="homeCover"  src="assets/08_SXSW/08s_cover.jpg" class= "projImage" style="width:100%;"></div>
+								   <div class = "imgContainer img08"> 
+
+
+								   		<img class ="homeCover" id = "animated" src = "assets/08_SXSW/08s_cover.gif">
+								   		<img class ="homeCover" id = "static" src = "assets/08_SXSW/08s_cover.jpg">
+
 								   <p class = "pn1"> Discovering Cultural </br> Design Differences </p>
 								   <div class = "descrip">
 								   	    <svg class = "pskills0 mHide" width="69" height="60" ><use href="#lineStart" /></svg>

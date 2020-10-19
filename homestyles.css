@@ -63,6 +63,44 @@ body{
     font-weight: bold;
     src: url("path/GraublauWebBold.otf") format("opentype");
 }*/
+#fader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+    pointer-events: none;
+    background: black;
+    animation-duration: 600ms;
+    animation-timing-function: ease-in-out;
+
+
+}
+
+
+
+@keyframes fade-out {
+    from { opacity: 1 }
+      to { opacity: 0 }
+}
+
+@keyframes fade-in {
+    from { opacity: 0 }
+      to { opacity: 1 }
+}
+
+#fader.fade-out {
+    opacity: 0;
+    animation-name: fade-out;
+}
+
+#fader.fade-in {
+    opacity: 1;
+    animation-name: fade-in;
+}
+
+
 
 
 
@@ -938,7 +976,7 @@ width: 50%;
 }
 
 p.bDesc {
-	font-size: 14px;
+	font-size: 18px;
 	/*padding-right: 5vw;*/
 
 }
@@ -1027,6 +1065,10 @@ p.H2{
 @media only screen and (min-width: 1200px){
 .projectPage{
 		display: row;
+		width: 1200px;
+		margin: auto;
+		margin-top: 60px;
+
 	}
 .pHeadNumber{
 	float:left;
@@ -1038,6 +1080,7 @@ p.H2{
 	float: right;
 
 }
+
 
 
 }
