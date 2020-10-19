@@ -1,18 +1,22 @@
+
+
+
 function fadeInPage() {
 	if (!window.AnimationEvent) { return; } 
 	var fader = document.getElementById('fader');
     fader.classList.add('fade-out');
-}
 
+}
 
 
 document.addEventListener('DOMContentLoaded', function() {
 
-	 if (!window.AnimationEvent) { return; }
-	 var anchors = document.getElementsByTagName('a');
+   if (!window.AnimationEvent) { return; }
+  var anchors = document.getElementsByTagName('a');
+   /*var anchors = document.getElementsByClassName('content');*/
     
     for (var idx=0; idx<anchors.length; idx+=1) {
-    	if (anchors[idx].hostname !== window.location.hostname ||
+      if (anchors[idx].hostname !== window.location.hostname ||
             anchors[idx].pathname === window.location.pathname) {
             continue;
         }
@@ -34,6 +38,21 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 window.addEventListener('pageshow', function (event) {
   if (!event.persisted) {
     return;
@@ -41,3 +60,5 @@ window.addEventListener('pageshow', function (event) {
   var fader = document.getElementById('fader');
   fader.classList.remove('fade-in');
 });
+
+

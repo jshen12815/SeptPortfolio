@@ -409,6 +409,8 @@ nav {
 
 .content {
 	/*background-color: #F4ECEC;;*/
+	color: var(--H_typeline);
+	text-decoration: none;
 	position: relative;
 	cursor:pointer;
 	display: block;
