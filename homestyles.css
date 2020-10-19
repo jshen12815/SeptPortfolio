@@ -5,7 +5,8 @@
 	--H_lineDark:#787878; 
 
 	/*--H_bkg: #F8F4F1; 
-	--H_typeline:#343890;*/
+	--H_typeline:#343890;
+	--H_lineDark:#343890; */
 
 }
 
@@ -45,9 +46,9 @@ body{
 		  font-family: 'Ambiant';
 		 /* font-family: 'Cormorant Garamond', serif;*/
 		  /*font-family:'Lora', serif; */
-		  /*background-color: var(--H_bkg);*/
+		  background-color: var(--H_bkg);
 
-		  background-image: linear-gradient(black,#12123A);
+		  /*background-image: linear-gradient(black,#12123A);*/
 		  background-attachment: fixed;
 		  margin: 0;
 		  padding: 0;
@@ -810,6 +811,7 @@ p.credit{
 
 .homeCover {
         max-width: 100%; 
+        min-height: 100%;
         position: absolute;   
         left: 0;  
         right: 0;  
