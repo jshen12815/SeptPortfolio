@@ -49,7 +49,7 @@ body{
 		  /*font-family:'Lora', serif; */
 		  background-color: var(--H_bkg);
 
-		  /*background-image: linear-gradient(black,#12123A);*/
+		  background-image: linear-gradient(black,#12123A);
 		  background-attachment: fixed;
 		  margin: 0;
 		  padding: 0;
@@ -353,6 +353,8 @@ header {
 	border-bottom: 1px solid var(--H_lineDark);
     font-size: 16px;
     padding: 10px;
+    z-index: 99999999;
+    background-color: var(--H_bkg);
 
 
 }
@@ -507,6 +509,103 @@ nav {
 		text-align: center;
 }
 
+
+
+/* _________________________Abouut_________________________ */
+
+.aboutPage{
+	max-width: 1000px;
+	margin: auto;
+	margin-bottom: 200px;
+	height: 1500px;
+}
+
+.aboutPadding {
+	margin-left: 30px;
+	margin-left: 30px;
+	margin-bottom: 400px;
+}
+.credits {
+	font-size: 24px;
+	padding-top: 50px;
+}
+
+.credsColumn {
+	overflow: hidden;
+	padding-top: 50px;
+}
+
+
+
+#headshot{
+	width: 100%;
+}
+
+p.aDesc {
+	font-size: 20px;
+	margin: 0;
+	margin-right: 50px;
+}
+
+#CTAResume{
+	padding-top: 50px;
+	opacity: 80%;
+	padding-bottom: 100px; 
+}
+
+#CTAResume:hover {
+	opacity:100%;
+}
+
+.leftFloat {
+	display: inline-block;}
+
+.b4{	
+	font-family:'Roboto Mono', monospace;
+	font-size: 12px;
+	padding-left: 10px;
+	color: var(--H_typeDark);
+}
+
+.experience {
+	margin-bottom: 70px;
+}
+
+.expContent {
+	margin-bottom: 10px;
+	font-size: 24px;
+}
+
+.socialAbout {
+	padding-top: 50px;
+}
+
+
+.spacer{
+padding-bottom: 150px;
+}
+
+p.creditAbout{
+	font-family:'Roboto Mono', monospace;
+	font-size: 12px;
+	float:right;
+	margin-right: -10px;
+	color: var(--H_typeDark);
+}
+
+.edu3 {
+	width: 30%;
+	float: left;
+	font-size: 18px;
+	padding-left: 15px;
+	margin-top: -25px;
+}
+
+.edu2{
+	font-size: 18px;
+}
+
+
 /* _________________________MOBILE_________________________ */
 @media only screen and (max-width: 480px){
 .mHide {
@@ -600,20 +699,47 @@ p.pn1{
 }
 
 
-.CTA {
-	font-size: 18px; 
-	border-radius: 50%;
-	padding:50px 20px;
-	display: block;
-	position: relative;
-	bottom: 0px;
-	border: 1px solid var(--H_typeline);
-	color:var(--H_typeline);
-	text-decoration: none;
+
+}
+@media only screen and (min-width: 1000px){
+
+
+	.credsColumn {
+	float: left;
+}
+
+	.credsRight{
+	width: 60%;
+	padding-left: 10%;
+
+}
+
 }
 
 
+@media only screen and (min-width: 700px){
+
+.credsLeft{
+	width:30%;
+
 }
+	.credsColumn {
+	float: left;
+}
+
+	.credsRight{
+	width: 60%;
+	padding-left: 5%;
+
+}
+
+}
+
+
+
+
+
+
 
 /* _________________________DESKTOP_________________________ */
 @media only screen and (min-width: 480px){
@@ -782,7 +908,7 @@ p.credit{
 }
 
 .c5 {
-	flex:0 0 680px;
+	flex:0 0 580px;
 }
 
 .c6 {
@@ -820,7 +946,7 @@ p.credit{
 .img03{
 	overflow: hidden;
 	width: 500px;
-	height: calc(100vh - 500px);
+	/*height: calc(100vh - 500px);*/
 	/*height: 280px;*/
 }
 .img04{
@@ -836,7 +962,7 @@ p.credit{
 .img06{
 	overflow: hidden;
 	width: 600px;
-	height: calc(100vh - 520px);
+	/*height: calc(100vh - 520px);*/
 }
 .img07{
 	overflow: hidden;
@@ -919,11 +1045,21 @@ p.credit{
 
 }
 
+.construction {
+	font-size: 30px;
+	color: var(--H_typeline);
+	margin: auto;
+	margin-top: 10px;
+	text-align: center;
+}
 
 
 
-
-
+.expVid {
+	width: 50%;
+	margin: auto;
+	margin-top: 100px;
+}
 
 
 
@@ -1120,7 +1256,7 @@ p.H2{
 @media only screen and (max-height: 400px){
 	.projNum{
 		display: none;
-	}
+	}*/
 
 	p.HiThere{
 			display: inline-block;
