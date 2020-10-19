@@ -3,6 +3,7 @@
 	--H_bkg: #000000;
 	--H_typeline:#F9F1EB; 
 	--H_lineDark:#787878; 
+	--H_typeDark:#C8C8C8;
 
 	/*--H_bkg: #F8F4F1; 
 	--H_typeline:#343890;
@@ -77,7 +78,7 @@ body{
 }
 
 #emailCopy{
-	font-size:24px;
+	font-size:18px;
 	margin:0;
 }
 
@@ -87,7 +88,7 @@ body{
 
 
 .tooltip {
-  padding-top:1vh;
+  padding-top:2px;
   position: absolute;
   display: inline-block;
       outline: none;
@@ -146,6 +147,7 @@ p.b2 {
 	overflow-wrap: normal: 
 	white-space: normal;
 	font-size: 12px;
+	color: var(--H_typeDark);
 }
 
 p.pn1{
@@ -172,7 +174,7 @@ p.B1{
 }
 .projNum {
 	font-weight: 700;
-	font-size: 24px;
+	font-size: 18px;
 	/*-webkit-text-stroke: 2px var(--H_typeline);
 	color: #FFFFFF;*/
 }
@@ -203,7 +205,7 @@ p.B1{
 .CTA {
 
 	position: absolute;
-	right:80px;
+	right:70px;
 	top: 230px;
 	opacity: 80%;
 }
@@ -227,6 +229,12 @@ p.B1{
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
+}
+
+
+
+.projImage{
+
 }
 
 /* _________________________scrollBarTest ________________________________*/
@@ -536,6 +544,7 @@ nav {
 
 .homeCover {
         max-width: 100%; 
+
         position: absolute; 
 		text-align: center;
 		margin:auto;
@@ -648,7 +657,7 @@ p.pn1{
 
 .stack2{
 	width: 100%;
-	height: 200px;
+	height: 120px;
 	text-decoration: none;
 	border-top: 1px solid var(--H_lineDark);
 	position: absolute;
@@ -699,6 +708,7 @@ p.credit{
 	position: absolute; 
 	right:20px;
 	bottom:0px;
+	color: var(--H_typeDark);
 }
 
 .social {
@@ -805,7 +815,7 @@ p.credit{
 
 .homeCover {
         max-width: 100%; 
-        min-height: 100%;
+       /* min-height: 100%;*/
         position: absolute;   
         left: 0;  
         right: 0;  
